@@ -12,10 +12,26 @@
                 text-shadow: 3px 3px #BA1200;
                 color: honeydew;
                 float: left;
-                background-color: #508AA8;
+                background-color: rgb(88, 145, 173);
                 padding: 20px;
                 margin-right: 100px;
                 }
+            .nameQuestion{
+                background-color: #11151C;
+                color: #D66853;
+            }
+            .placeQuestion{
+                background-color: #32021F;
+                color: #77A0A9;
+            }
+            .foodQuestion{
+                background-color: #68534D;
+                color: #F4FEC1;
+            }
+            .colorQuestion{
+                background-color: #02111B;
+                color: #5D737E;
+            }
         </style>
     </head>
     <body>
@@ -33,6 +49,11 @@
             <section>
                 <p>It's difficult to find examples of lorem ipsum in use before Letraset made it popular as a dummy text in the 1960s, although McClintock says he remembers coming across the lorem ipsum passage in a book of old metal type samples. So far he hasn't relocated where he once saw the passage, but the popularity of Cicero in the 15th century supports the theory that the filler text has been used for centuries.</p>
                 <img src="images/lorem.jpg" alt="lorem ipsum image">
+                <h2>You answered:</h2>
+                <p class="nameQuestion">What's your name?</p>
+                <p class="placeQuestion">Where do you live?</p>
+                <p class="foodQuestion">What's your favorite food?</p>
+                <p class="colorQuestion">What's your favorite color?</p>
             </section>
         </main>
         <footer>
@@ -54,9 +75,9 @@
             console.log("Visitor's favorite food: " + food);
             console.log("Visitor's favorite: " + color);
             // print greeting on the page with inputs
-            document.getElementById("greetingMessage").innerHTML = "Hello, " + name + ", from " + location + " I hope you get to eat " + food + " on a " + color + " plate today!";
+            document.getElementById("greetingMessage").innerHTML = "Hello, " + name + ", from " + location + "! I hope you get to eat " + food + " on a " + color + " plate today!";
         }
-         greeting();   
+         greeting();
         </script>
     </body>
 </html>
