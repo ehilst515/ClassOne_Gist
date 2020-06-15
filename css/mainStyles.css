@@ -1,0 +1,37 @@
+h1 {
+    font-size: 100px;
+    text-shadow: 3px 3px #BA1200;
+    color: #CEABB1;
+    float: left;
+    background-color: #031927;
+    padding: 20px;
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+main {
+    background-color: whitesmoke;
+    clear: both;
+}
+header, footer {
+    height: 250px;
+    background-color: wheat;
+}
+nav li{
+    list-style-type: none;
+    font-size: 30px;
+    padding: 100px;
+    margin-left: 100px;
+    display: inline;
+}
+img{
+    width: 100%;
+}
+p{
+    padding: 20px;
+}
+h3{
+    padding: 20px;
+}

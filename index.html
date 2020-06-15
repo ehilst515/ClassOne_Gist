@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/mainStyles.css">
+        <style>
+            .lab {
+                font-size: 33px;
+                text-shadow: 3px 3px #BA1200;
+                color: honeydew;
+                float: left;
+                background-color: #508AA8;
+                padding: 20px;
+                margin-right: 100px;
+                }
+        </style>
+    </head>
+    <body>
+        <header style="background-color: #58FCEC">
+            <h1>Git Gist</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" alt="Link to HomePage">Home Page</a></li>
+                    <li><a href="https://help.github.com/en/github/writing-on-github/creating-gists" alt="Link to how to make a gist">Creating a Gist</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="lab">Class 1 Lab</h1>
+            <section>
+                <p>It's difficult to find examples of lorem ipsum in use before Letraset made it popular as a dummy text in the 1960s, although McClintock says he remembers coming across the lorem ipsum passage in a book of old metal type samples. So far he hasn't relocated where he once saw the passage, but the popularity of Cicero in the 15th century supports the theory that the filler text has been used for centuries.</p>
+                <img src="images/lorem.jpg" alt="lorem ipsum image">
+            </section>
+        </main>
+        <footer>
+            <h3>Welcome!</h3>
+            <p id="greetingMessage"></p>
+        </footer>
+        <script src="js/app.js"></script>
+        <script type="text/javascript">
+        // function to create a greeting
+        function greeting() {
+            // gather information
+            var name = prompt("What's your name?", "Person");
+            var location = prompt("Where do you live?","a place");
+            var food = prompt("What's your favorite food?","food");
+            var color = prompt("What's your favorite color?","clear");
+            // console log inputs
+            console.log("Visitor's name: " + name);
+            console.log("Visitor's location: " + location);
+            console.log("Visitor's favorite food: " + food);
+            console.log("Visitor's favorite: " + color);
+            // print greeting on the page with inputs
+            document.getElementById("greetingMessage").innerHTML = "Hello, " + name + ", from " + location + " I hope you get to eat " + food + " on a " + color + " plate today!";
+        }
+         greeting();   
+        </script>
+    </body>
+</html>
